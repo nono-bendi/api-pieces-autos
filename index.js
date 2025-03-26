@@ -1,6 +1,6 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
-const router = jsonServer.router("pieces-autos.json");
+const router = jsonServer.router("db.json"); // <-- utiliser db.json qui contient les AVIS
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
